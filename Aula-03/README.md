@@ -1,0 +1,3 @@
+Na terceira aula aprendemos a fazer listas não numeradas com marcadores de tipos diferentes, listas numeradas, listas de definição, elementos em nível de bloco. 
+    Aprendemos a usar o "Div" , comando para a divisão, seção e bloco. 
+    Usamos Input-Tipos de entradas de dados e por fim, realizamos um simples formulário, pedindo dados usando: name, value, placeholder, required, maxlength, disabled e readonly.
