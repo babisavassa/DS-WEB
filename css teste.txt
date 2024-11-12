@@ -1,0 +1,3 @@
+label, imput, select, textarea{
+    
+}

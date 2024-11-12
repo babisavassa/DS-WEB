@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Academia</title>
+    <link rel="stylesheet" type="text/css href=">
+</head>
+<body>
+    <form 
+        action="a" method="post">
+
+        <label for= "nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required="required"> <br><br>
+
+        <label for= "email">Email:</label>
+        <input type="text" name="email" id="email" required> <br><br>
+
+        <label for= "telefone">Telefone:</label>
+        <input type="tel" name="telefone" id="telefone" required> <br><br>
+
+        <label for="dt-nasc"> Data de nascimento:</label>
+        <input type="date" name="dt-nasc" id="dt-nasc" required> <br><br>
+
+        <label for="peso">Peso:</label>
+        <input type="number" name="peso" id="peso" required step="0.01"> <br><br>
+
+        <label for="altura">Altura:</label>
+        <input type="number" name="altura" id="altura" required step="0.01"> <br><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" name="foto" id="foto" required><br><br>
+
+        <label>Plano:</label> <br><br>
+        <input type="radio" name="plano" id="sem">
+        <label for="sem">semanal</label>
+        <input type="radio" name="plano" id="men">
+        <label for="men">mensal</label>
+        <input type="radio" name="plano" id="anu">
+        <label for="anu">anual</label>
+        
+        <label>Dias da semana:</label> <br><br>
+        <input type="checkbox" name="segunda" id="seg">
+        <label for="seg">Segunda:</label>
+        <input type="checkbox" name="Terça" id="ter">
+        <label for="ter">Terça:</label>
+        <input type="checkbox" name="Quarta" id="qua">
+        <label for="qua">Quarta:</label>
+        <input type="checkbox" name="Quinta" id="qui">
+        <label for="qui">Quinta:</label>
+        <input type="checkbox" name="Sexta" id="sex">
+        <label for="sex">Sexta:</label>
+
+        <label>Objetivo principal do treino:</label>
+        <select name="objetivo" required>
+            <option value="">Selecione:</option>
+            <option value="massa-muscular">Ganho de massa muscular</option>
+            <option value="cardiovascular">Melhoria da saúde cardiovascular</option>
+            <option value="flexibilidade">Aumento da flexibilidade</option>
+            <option value="mental">Melhoria da saúde saúde mental</option>
+            <option value="outro">Outro</option>
+        </select>
+        <br>
+        <label>Informações adicionais:</label>
+        <textarea name="Informações" rows="8" cols="54" maxlength="5" required></textarea>
+        <br><br>
+        <input type="submit" name="enviar" value="ENVIAR">
+        
+
+    </form>
+
+</body>
+</html>

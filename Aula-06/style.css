@@ -1,0 +1,40 @@
+p{
+    .montserrat-uniquifier> {
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: weight;
+        font-style: normal;
+      }
+      
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.lowercase{
+    text-transform: lowercase;
+}
+.capitalize{
+    text-transform: capitalize;
+}
+.indent{
+    text-indent: 50px;
+}
+.shadow{
+    text-shadow: 1px 1px;
+}
+.shadow-blur{
+    text-shadow: 1px 1px 3px #00ff00;
+}
+.overline{
+    text-transform: overline;
+}
+.line-through{
+    text-transform: line-through;
+}
+.underline{
+    text-transform: underline;
+}
+.overline-underline{
+        text-transform: overline-underline;
+
+}
