@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos Animados</title>
+  <style>
+    /* Estilo geral */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(45deg, #a87ecc, #803bbc, #d6531b);
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
+    .box {
+      width: 120px;
+      height: 120px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+      transition: all 0.5s ease;
+      background: rgba(0, 0, 0, 0.6);
+      cursor: pointer;
+    }
+    /* Escala */
+    .scale:hover {
+      transform: scale(1.5);
+    }
+    /* Rotação */
+    .rotate:hover {
+      transform: rotate(360deg);
+    }
+    /* Translação */
+    .translate:hover {
+      transform: translate(50px, 50px);
+    }
+    /* Border-radius */
+    .border-radius:hover {
+      border-radius: 50%;
+    }
+    /* Opacidade */
+    .opacity:hover {
+      opacity: 0.5;
+    }
+    /* Transformação combinada */
+    .combined:hover {
+      transform: rotate(45deg) scale(1.2);
+      border-radius: 25%;
+    }
+    /*Keyframes + animations*/
+    @keyframes moverEfeito {
+    0% {
+    transform: translateX(0);
+    background-color: red;
+    }
+    50% {
+    transform: translateX(200px);
+    background-color: yellow;
+    }
+    100% {
+    transform: translateX(0);
+    background-color: green;
+    }
+    }
+    .animado {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: moverEfeito 4s ease-in-out infinite;
+    }
+    @keyframes moverEfeito {
+        0% {
+            transform: translateX(0);
+            background-color: red;
+    }
+    50% {
+            transform: translateX(200px);
+            background-color: yellow;
+}
+    100% {
+        transform: translateX(0);
+        background-color: green;
+}
+}
+
+    .animado {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation: moverEfeito 4s ease-in-out infinite;
+}
+    </style>
+</head>
+<body>
+    
+  <div class="container">
+    <div class="box scale">Scale</div>
+    <div class="box rotate">Rotate</div>
+    <div class="box translate">Translate</div>
+    <div class="box border-radius">Border-radius</div>
+    <div class="box opacity">Opacity</div>
+    <div class="box animado">animado</div>
+  </div>
+</body>
+</html>
