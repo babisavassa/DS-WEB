@@ -1,0 +1,28 @@
+div{
+    background-color: rgb(171, 21, 201);
+    width: 400px;
+    border: 1px solid rgb(44, 188, 207);
+    text-align: center;
+}
+h1{
+    color: white;
+}
+nav{
+    display: inline-block;
+    width: 200px;
+    background-color: rgb(186, 44, 77);
+}
+a{
+    display: block;
+    text-decoration: dotted;
+
+}
+.segunda{
+    margin: 0 auto;
+    background-color: blueviolet;
+    width: 500px;
+    padding: 270px;
+    padding-left: 300px;
+    border: 1px solid rgb(red, green, blue);
+    text-align: center;
+}
