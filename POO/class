@@ -1,0 +1,24 @@
+<?php
+
+class Veiculo {
+
+    //Atributos:
+    public $marca;
+
+    protected $seguro;
+
+    private $renavam;
+
+    //Metodo:
+    public function ligar(){
+
+    }
+}
+
+//Instaciando meus objetos
+
+$polo = new Veiculo();
+$polo ->marca = "Worlkswagem";
+$polo ->renavam = "112345";
+
+?>

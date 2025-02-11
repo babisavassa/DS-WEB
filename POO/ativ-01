@@ -1,0 +1,42 @@
+<?php
+
+class Bola{
+    public $marca;
+    public $tamnho;
+    public $cor;
+    public $formato;
+    public $barulho;
+
+    public function jogar(){
+
+    }
+    public function brincar(){
+
+    }
+    public function pular(){
+        
+    }
+}
+
+
+class ContaBancaria {
+    public $saldo;
+    public $numeroConta;
+    public $titular;
+
+    public function exibirSaldo(){
+        return $this-> "O saldo é: R$" saldo;
+        
+    }
+    public function extrato(){
+
+    }
+    public function retirar(){
+
+    }
+    public function exibir(){
+
+    }
+
+}
+?>
