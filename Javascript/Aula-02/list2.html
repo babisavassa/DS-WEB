@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista 2</title>
+</head>
+<body>
+
+    <!--Ex 1-->
+    <h1>Verificar Maioridade</h1>
+
+    <label for="idade">Digite sua idade:</label>
+    <input type="number" id="idade" placeholder="Idade">
+
+    <button onclick="verificarIdade()">Verificar</button>
+
+    <p id="resultado"></p>
+
+    <!--Ex 2-->
+    <h1>Verificar se o Número é Positivo, Negativo ou Zero</h1>
+
+<label for="numero">Digite um número:</label>
+<input type="number" id="numero" placeholder="Número">
+<button onclick="verificarNumero()">Verificar</button>
+<p id="result"></p>
+
+    <!--Ex3-->
+    <h1>Cadastre-se</h1>
+
+    <label for="usuario">Usuário:</label>
+    <input type="text" id="usuario" placeholder="Digite o usuário">
+    <br><br>
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" placeholder="Digite a senha">
+    <br><br>
+    <button onclick= "verificarUsuário()">Entrar</button>
+    <p id="mensagem"></p>
+
+
+    <!--Ex4-->
+    <h1>Calculadora</h1>
+
+    <label for="numero">Primeiro número:</label>
+    <input type="number" id="number" placeholder="Digite o primeiro número"><br><br>
+    <label for="numero">Segundo número:</label>
+    <input type="number" id="number" placeholder="Digite o segundo número"><br><br>
+    <label for ="operacao">Escolha a operação:</label>
+    <select id="operacao">
+        <option value="soma">Adição</option>
+        <option value="subtrai">Subtração</option>
+        <option value="divide">Divisão</option>
+        <option value="multiplica">Multiplicação</option>
+    </select>
+    <button onclick= "verificarCalculo()">Calcular</button>
+    <p id="resultado"></p>
+
+    <!--Ex5-->
+    <h1>Par ou Ímpar?</h1>
+    <label for="numero">Digite um número:</label>
+    <input type="number" id="numero" placeholder="Digite o número"><br><br>
+    <button onclick="verificarParImpar()">Verificar</button>
+    <p id="resposta"></p>
+
+
+    <!--Ex6-->
+    <h1>Qual número é maior?</h1>
+    <label for="numero1">Digite um número</label>
+    <input type="number" id="numero1" placeholder="Primeiro Número"><br><br>
+    <label for="numero2">Digite outro número</label>
+    <input type="number" id="numero2" placeholder="Segundo Número"><br><br>
+    <button onclick="verificarMaiorNumero()">Verificar Maior</button>
+    <p id="verificar"></p>
+
+    <!--Ex7-->
+    <h2>Verificar Triângulo</h2>
+
+    <label for="lado1">Primeiro lado:</label>
+    <input type="number" id="lado1" placeholder="Digite o primeiro lado"><br><br>
+
+    <label for="lado2">Segundo lado:</label>
+    <input type="number" id="lado2" placeholder="Digite o segundo lado"><br><br>
+
+    <label for="lado3">Terceiro lado:</label>
+    <input type="number" id="lado3" placeholder="Digite o terceiro lado"><br><br>
+
+    <button onclick="verificarTriangulo()">Verificar Triângulo</button>
+
+    <p id="certo"></p>
+</body>
+<script src="list2.js"></script>
+</html>

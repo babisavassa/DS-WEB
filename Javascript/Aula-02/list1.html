@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 1</title>
+</head>
+<body>
+        <h1>Boas-Vindas</h1>
+        
+        <!--Ex 1-->
+        <label for="nome">Digite seu nome:</label>
+        <input type="text" id="nome" placeholder="Seu nome">
+        
+        <br><br>
+        <button onclick="boasVindas()">Clique para ver a mensagem</button>
+
+        <!-- Espaço para exibir a mensagem -->
+        <p id="mensagem"></p>
+
+
+        <!--Ex 2-->
+        <h1>Validador de Par ou Ímpar</h1>
+    
+        <label for="numero">Digite um número:</label>
+        <input type="text" id="numero" placeholder="Número">
+    
+        <button onclick="validarParOuImpar()">Validar</button>
+    
+        <!-- Espaço para exibir o resultado -->
+        <p id="resultado"></p>
+
+
+        <!--Ex 3-->
+        <h1>Conversor de Caixa Alta</h1>
+    
+        <label for="texto">Digite um texto:</label>
+        <input type="text" id="texto" placeholder="Texto">
+
+        <br><br>
+        <button onclick="converterCaixaAlta()">Converter para Caixa Alta</button>
+
+        <!-- Espaço para exibir o resultado -->
+        <p id="resposta"></p>
+
+
+        <!--Ex4-->
+        <h1>Calcular Porcentagem</h1>
+    
+        <label for="valor">Digite o valor:</label>
+        <input type="number" id="valor" step="0.01" placeholder="Valor">
+        <br><br>
+    
+        <label for="porcentagem">Digite a porcentagem:</label>
+        <input type="number" id="porcentagem" step="0.01" placeholder="Porcentagem">
+    
+        <button onclick="calcularPorcentagem()">Calcular</button>
+    
+        <p id="result"></p>
+
+
+        <!--Ex5-->
+        <style>
+            /* Estilo da div */
+            #minhaDiv {
+                width: 200px;
+                height: 200px;
+                background-color: lightblue;
+                margin: 20px;
+                text-align: center;
+                line-height: 200px;
+                font-size: 18px;
+            }
+        </style>
+
+        <h1>Clique no botão para mudar a cor:</h1>
+
+        <div id = "minhaDiv"></div>
+        <button onclick="mudarCor()">Mudar cor</button>
+</body>
+<script src="list1.js"></script>
+</html>
