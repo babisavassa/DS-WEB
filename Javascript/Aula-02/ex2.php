@@ -1,4 +1,16 @@
 <?php 
+    //exercício 1
+    abstract class Animal {
+        public function fazerSom(){}
+        }
+        class Vaca extends Animal {
+        public function fazerSom() {
+        echo "Au Au!";
+        }
+        }
+        $cachorro = new Cachorro();
+        $cachorro->fazerSom();
+
     //exercício 2
     abstract class Animal{
         abstract public function fazerSom();
@@ -21,7 +33,7 @@
            echo "Piu Piu";
        }
        public function mover() {
-           echo "Voar";
+           echo "Voa";
        }
    }
        
