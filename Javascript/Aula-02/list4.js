@@ -27,15 +27,3 @@
       contagem++;
       contador.textContent = contagem; //atualiza contagem
      });
-
-//exercicio4
-    var div = document.createElement('div');
-    div.textContent = 'Bem-vindo a página!';
-    div.style.backgroundColor = '#4CAF50';
-    div.style.color = 'white';           
-    div.style.padding = '20px';           
-    div.style.textAlign = 'center';        
-    div.style.fontSize = '20px';         
-    div.style.borderRadius = '8px';    
-    div.style.margin = '20px';              
-    document.body.appendChild(div);
