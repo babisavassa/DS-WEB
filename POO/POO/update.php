@@ -1,48 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
-    <?php   
+    <?php
     $dados = $db->query("SELECT * FROM clientes");
-    $todos = $dados->fetch(PDO::FETCH_ASSOC);
-
+    $todos = $dados->fetch(PDO::FETCH_ASSOC); 
     ?>
+    
     <div class="container">
         <div class="formulario">
-            <form action="" method="POST">
-                <label for="">Nome: </label>
+            <form action="update.php" method="POST">
+                <label for=""> Nome: </label>
                 <input type="text" name="nome">
                 <br>
-                <label for="">E-mail: </label>
+                <label for=""> Email: </label>
                 <input type="text" name="email">
                 <br>
                 <input type="submit">
+
             </form>
         </div>
 
+<?php
+    $novoNome = "Babi Savassa";
+    $email = "barbara.savassa16@gmail.com";
 
-
-<?php 
-$novoNome = "Bruno Attina";
-$email = "bruno@gmail.com";
-
-$stmt = $db->prepare('UPDATE clientes SET nome = :nome WHERE email = :email');
-$stmt->execute(array(
-    ':nome'   => $novoNome,
+    $stmt = $db->prepare('UPDATE clientes SET nome = :nome WHERE email = :email');
+    $stmt->execute(array(
+    ':nome' => $novoNome,
     ':email' => $email
-  ));
-  
-if( $stmt->rowCount() > 0 ) {
+    ));
+    if( $stmt->rowCount() > 0 ) {
     echo "Ocorreram ".$stmt->rowCount()." alterações na tabela.";
-} else {
+    } else {
     echo 'Nada foi alterado.';
-}
-?>
-
-</div>
-</body>
+    }

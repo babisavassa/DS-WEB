@@ -13,10 +13,10 @@
         include "conexao.php";
 
         echo "<h2>Inserindo dados</h2>";
-        $statement = $db->prepare("INSERT INTO clientes (nome, email, observacao) VALUES (?, ?)");
-        $statement->bindParam(':nome' , $nome);
-        $statement->bindParam(':email' , $email);
-        $statement->bindParam(':observacao' , $observacao);
+        $statement = $db->prepare("INSERT INTO clientes (nome, email, observacao) VALUES (:nome, :email, :observacao)");
+        $statement->bindParam(':nome', $nome);
+        $statement->bindParam(':email', $email);
+        $statement->bindParam(':observacao', $observacao);
         $statement->execute();
 
         header("Location: cliente.php"); //Redirecionamento com PHP

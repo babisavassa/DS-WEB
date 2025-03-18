@@ -20,11 +20,12 @@
     Class Funcionario{
 
             public $nome = "Luna";
-            
+            protected $idade 20;
             private $salario = "1.000";
             
             public function verDados(){
             echo $this->nome . "<br/>";
+            echo $this->idade . "<br/>";
             echo $this->salario . "<br/>";
             }
             }
@@ -33,6 +34,7 @@
             public function verDados(){
             echo get_class($this) . "<br/>";
             echo $this->nome . "<br/>";
+            echo $this->idade . "<br/>";
             echo $this->salario . "<br/>";
             }
             }
@@ -44,7 +46,7 @@
     Class Gerente{
 
     public $nome = "Luna";
-    protected $idade = 20;
+    protected $idade 20;
     private $salario = "1.000";
     
     public function verDados(){
@@ -69,7 +71,7 @@
     Class Desenvolvedor{
 
         public $nome = "Lorenzo";
-        protected $idade =  25;
+        protected $idade 25;
         private $salario = "100.000";
         
         public function verDados(){
@@ -101,15 +103,15 @@
             
             }
 
-            public function calcularBonus()
+            public function calcularBonus();
 
-        }
+         }
         
             class Gerente extends Funcionario {
             public function calcularBonus(){
                 return $this -> salario * 0.20;
             }
-        }
+         }
             class Desenvolvedor extends Funcionario {
             public function calcularBonus(){
                  return $this -> salario * 0.10;

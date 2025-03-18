@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +11,19 @@
 <body>
     <?php   
     $dados = $db->query("SELECT * FROM clientes");
-    $todos = $dados->fetch(PDO::FETCH_ASSOC);
+    $todos = $dados->fetch(PDO::FETCH_ASSOC);  // Todos os registros retornados
 
     ?>
     <div class="container">
-        <div class="formulario">
-            <form action="" method="POST">
+        <div class="formulario"> <!--Div para o formulario-->
+
+            <form action="" method="POST"> <!--formulario enviando para .php por POST=metodo mais seguro pois fica oculto-->
                 <label for="">Nome: </label>
                 <input type="text" name="nome">
                 <br>
                 <label for="">E-mail: </label>
                 <input type="text" name="email">
-                <br>
+                <br><br>
                 <input type="submit">
             </form>
         </div>

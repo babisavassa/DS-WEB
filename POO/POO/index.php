@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business System</title>
-    <link rel="shortcut icon" type="imagex/png" href="./assets/img/ico.svg">
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
     <div class="menu">
-        <ul>
-            <li><a href="#" class="meumenu meumenu-active" title="Home">Home</a></li>
+    <ul>
+            <li><a href="#" class="meumenu" title="Home">Home</a></li>
             <li><a href="cliente.php" class="meumenu" title="Clientes">Clientes</a></li>
             <li><a href="#" class="meumenu" title="Produtos">Produtos</a></li>
             <li><a href="#" class="meumenu" title="Vendas">Vendas</a></li>
-        </ul>
+
+    </ul>
     </div>
+    
     <div class="container">
         <hr>
         <h1>Dashboard</h1>
-        <p>Os gráficos e exibições de informações encontram-se em desenvolvimento, os unicos dados encontrados foram:</p>
-    <?php  
+        <p>A dashhoard encontra-se em desenvolvimento, os dados processados até o momento são:</p>
+    <?php
         include 'conexao.php';
-
         $dados = $db->query("SELECT * FROM clientes");
-        echo "Quantidade de clientes cadastrados: ".$dados->rowCount();
-
+        echo "Quantidade de clientes cadastrados:". $dados->rowCount();        
+     
     ?>
     </div>
 </body>
-<script src="./assets/js/script.js"></script>
+<script src="script.js"> </script>
 </html>
